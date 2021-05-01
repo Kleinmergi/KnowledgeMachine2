@@ -1,21 +1,22 @@
+import math
+
 from Events.UIAnimationen import Ring
 from OwnDebug import printDebug
 
-class InputEvents:
+def neuer(type, koordinaten):
+    if type == "Klicken":
+         return Klicken(koordinaten)
+    elif type == "Ziehen":
+        return
+
+
+
+
+
+class Klicken:
+
     def __init__(self, koordinaten):
         self.koordinaten = koordinaten
-        # self.y = y
-
-    def animation(self):
-        pass
-
-
-
-
-class Klicken(InputEvents):
-
-    def __init__(self, koordinaten):
-        super(Klicken, self).__init__(koordinaten)
         self.ringe = []
 
     def animation(self, screen, background, time, maxR):
@@ -36,4 +37,25 @@ class Klicken(InputEvents):
                 printDebug("now")
                 self.ringe.remove(ring)
                 del ring
+
+class Ziehen:
+
+    def __init__(self, koordinaten):
+        self.koordinaten = koordinaten
+        self.ring = Ring(self.koordinaten, 50, t0)
+
+    def addTuble(a,b):
+        if len.a != len.b:
+            raise ValueError
+        c=()
+        for i in range(len(a)):
+            c.append(a(i)+b(i))
+
+
+    def animation(self, screen, background, time, maxR):
+        """
+        """
+        self.ring.koordinaten = self.addTuble(self.koordinaten,(40*math.sin(time/40),40*math.cos((time/40))))
+
+
 
