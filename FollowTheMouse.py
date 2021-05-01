@@ -21,7 +21,7 @@ while go:
     mpx, mpy = pygame.mouse.get_pos()
 
 
-    e.animation(screen, Verwaltung.bColor, pygame.time.get_ticks(), 100)
+    #e.animation(screen, Verwaltung.bColor, pygame.time.get_ticks(), 100)
 
     pygame.display.update()
 

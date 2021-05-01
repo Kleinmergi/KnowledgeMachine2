@@ -30,7 +30,7 @@
 
     {
       "Name": "Der Stromkreis",
-      "S_ID": 3,
+      "S_ID": 2,
       "Sprites": [
         "img1.jpg"
       ],
@@ -55,7 +55,7 @@
 
     {
       "Name": "Was ist elektrische Ladung",
-      "S_ID": 2,
+      "S_ID": 3,
       "Sprites": [
         "img1.jpg"
       ],
@@ -80,7 +80,7 @@
 
     {
       "Name": "Leiter und Isolatoren",
-      "S_ID": 2,
+      "S_ID": 4,
       "Sprites": [
         "img1.jpg"
       ],
@@ -105,7 +105,7 @@
 
    {
       "Name": "Elektrostatik",
-      "S_ID": 1,
+      "S_ID": 5,
       "Sprites": [
         "img1.jpg"
       ],
@@ -130,7 +130,7 @@
 
     {
       "Name": "Spannung und Strom",
-      "S_ID": 2,
+      "S_ID": 6,
       "Sprites": [
         "img1.jpg"
       ],

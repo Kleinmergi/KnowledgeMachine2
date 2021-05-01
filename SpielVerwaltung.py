@@ -1,3 +1,4 @@
+from Kapitel import Kapitel
 from Szene import Szene
 
 
@@ -20,7 +21,7 @@ class SpielVerwaltung:
         cls.aktuellesKapitel.config
 
     def KapitelLaden(cls, name):
-        cls.aktuellesKapitel = Szene(name)
+        cls.aktuellesKapitel = Kapitel(name)
         cls.jsonFarbe = cls.aktuellesKapitel.config["Farbe"]
         cls.bColor = (cls.jsonFarbe[0], cls.jsonFarbe[1], cls.jsonFarbe[2])
 
