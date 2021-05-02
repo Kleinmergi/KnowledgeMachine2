@@ -3,11 +3,11 @@ import math
 from Events.UIAnimationen import Ring
 from OwnDebug import printDebug
 
-def neuer(type, koordinaten):
+def neuesEvent(type, koordinaten):
     if type == "Klicken":
          return Klicken(koordinaten)
     elif type == "Ziehen":
-        return
+        return Klicken(koordinaten)
 
 
 
@@ -42,7 +42,7 @@ class Ziehen:
 
     def __init__(self, koordinaten):
         self.koordinaten = koordinaten
-        self.ring = Ring(self.koordinaten, 50, t0)
+        self.ring = Ring(self.koordinaten, 50, 0)
 
     def addTuble(a,b):
         if len.a != len.b:
