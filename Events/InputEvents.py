@@ -19,6 +19,9 @@ class Klicken:
         self.koordinaten = koordinaten
         self.ringe = []
 
+    def __str__(self):
+        return "klicken bei " + self.koordinaten
+
     def animation(self, screen, background, time, maxR):
         """
         Füllen der Liste mit Ringen
@@ -43,6 +46,9 @@ class Ziehen:
     def __init__(self, koordinaten):
         self.koordinaten = koordinaten
         self.ring = Ring(self.koordinaten, 50, 0)
+
+    def __str__(self):
+        return "Ziehen bei " + self.koordinaten
 
     def addTuble(a,b):
         if len.a != len.b:

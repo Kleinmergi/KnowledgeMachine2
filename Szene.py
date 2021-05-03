@@ -12,9 +12,11 @@ class Szene:
 
 
     def parseInfo(self):
-        self.Interaktionen = []
+        self.Interaktionen = {}
         for interaktion in self.infos["Iteraktionen"]:
-            self.Interaktionen.append(neuesEvent("interaktion"))
+            #printDebug(interaktion)
+            koordinaten = (interaktion['Koordinaten']['x'], interaktion['Koordinaten']['y'])
+            self.Interaktionen[interaktion["Name"]] = [neuesEvent(interaktion["Typ"], koordinaten), interaktion["Sounds"], interaktion["Sprites"]]
         printDebug(self.Interaktionen)
 
 
@@ -22,7 +24,7 @@ class Szene:
     def printIteraktionen(self):
         out = ""
         for interaktion in self.infos["Iteraktionen"]:
-            out += interaktion["name"]
+            out += interaktion["Name"]
         return out
 
     def __str__(self):
