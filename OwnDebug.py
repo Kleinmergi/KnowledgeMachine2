@@ -1,4 +1,6 @@
 debugging = True
-def printDebug(x):
-    if debugging:
+code = 0
+
+def printDebug(x,Code=code):
+    if debugging and Code == code:
         print(x)

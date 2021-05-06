@@ -17,7 +17,7 @@ class Szene:
             #printDebug(interaktion)
             koordinaten = (interaktion['Koordinaten']['x'], interaktion['Koordinaten']['y'])
             self.Interaktionen[interaktion["Name"]] = [neuesEvent(interaktion["Typ"], koordinaten), interaktion["Sounds"], interaktion["Sprites"]]
-        printDebug(self.Interaktionen)
+        printDebug(self.Interaktionen, "Szene")
 
 
 

@@ -14,7 +14,7 @@ class Kapitel:
         for szene in self.config["Scenen"]:
             self.szenen[szene["S_ID"]] = Szene(szene["Name"], szene)
         for key, value in self.szenen.items():
-            printDebug(str(key) +","+str(value)+"\t"+ value.printIteraktionen())
+            printDebug(str(key) +","+str(value)+"\t"+ value.printIteraktionen(), Kapitel)
 
 
     def loadJson(self, szene):
