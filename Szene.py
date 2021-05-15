@@ -8,7 +8,9 @@ from OwnDebug import printDebug
 class Szene:
     def __init__(self, infos, clock: pygame.time.Clock):
         self.infos = infos
-        self.szenenname = infos["Name"]
+        self.szenenname = infos["Name"].replace('ue', u'ü').replace('ae', u'ä').replace('oe', u'ö')
+        for  s in self.szenenname:
+            print(s)
         self.setInterakationen()
         self.clock = clock
 

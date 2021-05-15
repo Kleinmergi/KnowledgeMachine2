@@ -1,10 +1,10 @@
 {
-  "Kapitel": "E-Lehre",
-  "K_ID": "03",
+  "Kapitel": "Hauptmenu",
+  "K_ID": "00",
   "Farbe": [220, 220, 80],
   "Scenen": [
     {
-      "Name": "Die Entdeckung der Elektrizitaet",
+      "Name": "Physikalische Disziplinen",
       "S_ID": 1,
       "Sprite": [
         "img1.jpg"
@@ -12,7 +12,7 @@
       "Sounds": [],
       "Iteraktionen": [
         {
-          "Name": "Bernstein",
+          "Name": "E-Lehre",
           "Koordinaten": {
             "x": 170,
             "y": 150,
@@ -22,7 +22,7 @@
           "Typ": "Klicken",
           "Sounds": [],
           "Sprite": {
-            "File":"Bernstein",
+            "File":"E-Lehre",
             "w": 256,
             "h":256,
             "Frame0":0,
@@ -31,7 +31,7 @@
           }
         },
         {
-          "Name": "Ampere",
+          "Name": "Mechanik",
           "Koordinaten": {
             "x": 500,
             "y": 170,
@@ -41,7 +41,7 @@
           "Typ": "Klicken",
           "Sounds": [],
           "Sprite": {
-            "File":"Ampere2",
+            "File":"Mechanik",
             "w": 512,
             "h": 512,
             "Frame0":0,

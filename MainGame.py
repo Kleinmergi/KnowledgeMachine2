@@ -14,7 +14,7 @@ clock = pygame.time.Clock()
 
 w, h = pygame.display.get_surface().get_size()
 
-Verwaltung.KapitelLaden("E-Lehre", clock)
+Verwaltung.Hauptmenu(clock)
 
 
 # klick = Klicken((100,100))

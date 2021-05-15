@@ -8,11 +8,11 @@ class MyUI:
         self.KapitelLogo = pygame.image.load("UI/Hauptmenu.png")
         self.Szene = ""
         pygame.font.init()
-        self.Schriften = pygame.font.SysFont('Arial', 30)
+        self.Schriften = pygame.font.SysFont('Comic Sam', 30)
         self.SzenenTitel = ""
 
     def KapitelLaden(self, name):
-        self.KapitelLogo = pygame.image.load("UI/"+name + ".png")
+        self.KapitelLogo = pygame.image.load("UI/" + name + ".png")
 
     def SzeneLaden(self, name):
         self.SzenenTitel = name
@@ -25,10 +25,10 @@ class MyUI:
                          pygame.Rect((frame, frame), (Size[0] - 2 * frame, Size[1] - 2 * frame)))
         # Szenentitel
         Titelleiste = self.Schriften.render(self.SzenenTitel, False, (55, 55, 55))
-        self.UISurface.blit(Titelleiste, (150, 150))
+        self.UISurface.blit(Titelleiste, (100, 100))
 
-        #Kaptielbild
-        self.UISurface.blit(pygame.transform.scale(self.KapitelLogo,(256,128)),(0,0))
+        # Kaptielbild
+        self.UISurface.blit(pygame.transform.scale(self.KapitelLogo, (128, 64)), (0, 0))
 
-        #Layer einbinden
+        # Layer einbinden
         screen.blit(self.UISurface, (0, 0))

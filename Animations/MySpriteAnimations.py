@@ -46,6 +46,7 @@ class MySpriteAnimations:
 
         #Sound laden
         self.sound = pygame.mixer.Sound("Sounds/" + self.name + ".wav")
+        self.smarttip = pygame.mixer.Sound("Sound/Smarttip/"+self.name +"wav")
 
     def frameToPos(self, frame):
         return self.width * frame
@@ -68,11 +69,18 @@ class MySpriteAnimations:
         self.width = width
         self.height = height
 
+    def PlaySmarttip(self):
+        if self.event.mouseIn():
+            self.smarttip.play()
+        else:
+            self.smarttip.stop()
+
     def startAnimation(self):
         """
         Starte animation mit setzen des aktuellen Null-Zeitpunktes
         """
         if self.event.mouseIn():
+            self.smarttip.stop()
             self.sound.stop()
             self.eigenZeit = pygame.time.get_ticks()
             self.playing = True

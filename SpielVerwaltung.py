@@ -21,7 +21,7 @@ class SpielVerwaltung:
     """
     def draw(cls, screen):
         cls.aktuellesKapitel.draw(screen)
-        cls.MyUi.draw(screen, 50);
+        cls.MyUi.draw(screen, 100);
 
     def aktuelleSzene(cls):
         return cls.aktuellesKapitel.getAKtuelleSzene()
@@ -35,6 +35,9 @@ class SpielVerwaltung:
         cls.bColor = (cls.jsonFarbe[0], cls.jsonFarbe[1], cls.jsonFarbe[2])
         cls.SzenenWechsel(1)
         cls.MyUi.KapitelLaden(name)
+
+    def Hauptmenu(cls, clock):
+        cls.KapitelLaden("Hauptmenu", clock)
 
     def SzenenWechsel(cls, SzenenId):
         cls.aktuellesKapitel.setzeSzene(SzenenId)
